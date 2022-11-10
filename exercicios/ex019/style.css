@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*O id no HTML é igual ao # no CSS(1 elemento)
+O class no HTML é igual ao . no CSS(+1 de um elemento)
+
+*/
+
+body{
+    background-color: #8AB1BA;
+    font-family: sans-serif;
+}
+
+h1{
+    color: #2D3A3D;
+    
+
+}
+
+h1#principal{ /* Identificando o h1 a partir do ID*/
+    text-align: center;
+    background-color: #2D3A3D;
+    color: white;
+}
+
+h2{
+    color: #4884FA;
+
+}
+
+.basico{
+    color: #208629;
+
+}
+
+.intermediario{
+    color: #adaf1ffd;
+
+}
+
+.avancado{
+    color: #851e1e;
+
+}
+
+.destaque{
+    background-color: rgb(129, 180, 125);
+}
+
+
+
+

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* *{
+    height: 100%;
+} */
+
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Essa combinação primeiramente tenta a arial, se não achar arial, tenta helvetica e por final categoria sans-serif, que automaticamente irá puxar uma fonte genérica. Essa combinação de fontes é chamada de combinação segura. */
+    color: black;
+
+    /* Medidas absolutas
+    cm, mm, in, px, pt, pc
+    
+    Medidas Relativas 
+    em, ex, rem, vw, vh, %
+
+    A medida pt é para uso de documentos impressos, como uma fonte tamanho 16 do word, ou seja, 16 pt, não recomendada para css. Usa-se em ou px.
+
+    A medida (em) tem como referência o tamanho padrão da fonte que é 16px, logo, 2em, será o dobro de 16px, duas vezes maior. É a melhor opção porque irá trabalhar com a porcentagem da fonte padrão, sendo bom para outros dispositivos como televisão, notebook, relógio, smarthphones, já que possui telas que usam pixeis duplos, triplos etc.
+
+
+    */
+    font-size: 0.9em;
+    font-weight: 400;
+    /* - de forma literal temos pesos(espessura) da fonte lighter, normal, bold e bolder
+    - Ou numérica entre 100-900, sabendo que a normal nesse caso é 400.
+    - Não se mexe a font-weight com fontes ja vindas do PC, como arial, e sim importadas do google fonts, por exemplo.
+    */
+    font-style: italic;
+    /* text-decoration: underline;  sublinhado */
+
+
+
+    /* shorthand font coloca todas características da fonte em uma só linha e todas em ordem
+    font: style weight size family
+    */
+
+    font:  normal 0.9em Arial, Helvetica, sans-serif;
+
+    
+}
+
+h1 {
+    
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    
+
+}
+
+

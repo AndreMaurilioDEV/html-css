@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px; /* deixa o corpo sem margens ao lado*/
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(88, 82, 82);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px; /* margem a direita dos links*/
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{ /*aside(filho) dentro de article(pai) */
+            background-color: rgb(88, 86, 86);
+            color: white;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;   
+            margin: 0px;    
+        
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav> <!-- menu para links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+
+        <main> <!-- conteudo principal-->
+            <section id="assuntos"> <!--Sessão -->
+
+            </section>
+
+            <section id="notícias">
+                <article> <!--artigo-->
+                    <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam facere tenetur dolorum vero, animi at ipsam dicta cumque omnis provident labore maiores quisquam deleniti voluptatem consequuntur natus inventore iusto vel ex laudantium, voluptates beatae! Amet ad doloremque explicabo porro? Deserunt, quo quibusdam sapiente, quae numquam in saepe laudantium commodi facilis qui totam, doloremque accusantium excepturi molestias! Expedita aut quod et iste voluptatum provident perferendis quaerat quo sint obcaecati minus voluptates, fuga omnis facilis velit voluptatem repellendus at eaque voluptate natus delectus cumque officiis. Exercitationem numquam ex sit ducimus reprehenderit. Dolor laboriosam rerum est similique labore asperiores eos dicta earum vitae!</p>
+                    <aside> <!--periferico ao artigo, exemplo: nome do autor-->
+                        <p>Artigo escrito por José</p>
+                    </aside>
+
+                </article>
+
+                <article>
+                </article>
+    
+
+            </section>
+
+
+        </main>
+
+        <footer> <!--rodapé-->
+            <p>Desenvolvido pelo CursoemVideo</p>
+
+        </footer>
+
+    
+    
+</body>
+</html>

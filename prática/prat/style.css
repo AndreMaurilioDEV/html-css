@@ -1,0 +1,143 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --cor01: black;
+    --cor02: #262626;
+    --cor03: #595959;
+    --cor04: #BF7B54;
+    --cor05: #F2F2F2;
+    --cor06: #737272;
+    --cor07: #D9CCC4;
+    --cor08: #ECE4DD;
+    --corfonte: #333333;
+
+
+    --fontetexto: 'Roboto Condensed', sans-serif;
+    --fontedestaque: 'Oswald', sans-serif;
+    --fontecabecalho: 'Anton', sans-serif;
+
+
+}
+
+
+body{
+    background-color: var(--cor08);
+    color: white;
+    text-align: justify;
+
+}
+
+header{
+    background-color: #1A1A1A;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header > h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 10px; /*margem no header h1, precisa de padding no header principal. */
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.39);
+    
+
+}
+
+
+
+nav{
+    background-color: #1A1A1A;
+    padding: 10px;
+    
+}
+
+nav > a{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--cor04);
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    
+}
+
+main{
+    background-color:var(--cor07);
+    margin: auto;
+    padding: 30px;
+    max-width: 1000px;
+    min-width: 280px;
+    margin-bottom: 25px;
+    border-radius: 0px 0px 10px #71b7f0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+main > h1{
+    color: var(--cor04);
+    font-size: 1.5em;
+    font-family: var(--fontecabecalho);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main > h2{
+    font-size: 1.5em;
+    font-family: var(--fontecabecalho);
+    color: var(--cor04);
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+
+main > p{
+    font-family: var(--fontetexto);
+    padding-bottom: 20px;
+    color: var(--corfonte);
+    font-size: 1em;
+}
+
+main > aside{
+    color: var(--corfonte);
+    font-family: var(--fontetexto);
+    font-size: 1em;
+}
+
+aside > h3{
+    font-family: var(--fontecabecalho);
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--cor04);
+}
+
+aside > p {
+    font-family: var(--fontetexto);
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    text-align: center;
+}

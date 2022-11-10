@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <!-- É usado o handbrake para converter arquivos para os formatos mais usados de vídeo em um navegador, como mpeg, webm e mp4.
+    Além de poder mudar a qualidade deixando o arquivo mais leve, como de 1080p para 720p30fps que já é uma ótima qualidade.
+OBS: formato m4v(youtube vimeo) e webm são bem mais leve que o mp4.-->
+
+<h1>Inserindo vídeos hospedados localmente</h1>
+<p>Este vídeo está hospedado no meu próprio servidor.</p>
+<video width="560" poster="imagens/foto-m.png" controls autoplay>
+    <source src="midia/meu-Video.m4v" type="video/mp4">
+    <source src="midia/meu-Video.webm" type="video/webm">
+    <source src="midia/meu-video.mp4" type="video/mp4">
+    <p>Infelizmente seu navegador não conseguiu carregar o vídeo. </p>
+    <!-- as ordens do source é bom colocar do menor arquivo para o maior. -->
+
+    <!-- OBS: VÍDEOS HOSPEDADOS LOCALMENTE USANDO ESSA TAG VÍDEO PODEM CONSUMIR MUITOS TRAFÉGO DE DADOS SE MUITOS CLIENTES REPRODUZIREM ESSES VÍDEOS AO MSM TEMPO. EX: 200 CLIENTES X 100MB = 20GB DE TRAFÉGO, o que aumentará o custo da hospedagem.-->
+
+</video>
+
+<h1>Inserindo vídeos do YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uQFVqltOXRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- Vídeos já hospedados do YouTube ou Vimeo, não consomem vídeos do seu servidor e sim do YouTube, como nesse exemplo. Por isso é bom upar vídeos no YouTube e dps colocar no site, assim será possível aumentar sua abragência, visualizações e algoritmo do google. É importante usar vídeos seus ou livres de direitos autorais. -->
+
+<h1>Inserindo vídeos do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/715595209?h=c6f1d455b3&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- No YouTube, ao acabar o vídeo, é recomendado outros vídeos, o que pode ser um problema, já que aparece o vídeo do concorrente, diferentemente do Vimeo, mas, lembrando que o Vimeo é pago e possuem algoritmos piores, comparado ao YouTube que é o segundo maior mecanismo de busca, atrás do google, também ligados entre si. -->
+
+</body>
+</html>

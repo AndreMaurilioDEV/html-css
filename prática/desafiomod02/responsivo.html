@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /* largura de um celular antigo quando em pé, com isso o conteudo se adapta ao tamanho, invés de quebrar. */
+            max-width: 800px;
+            margin: auto; /* Deixa o main no centro */
+        }
+
+        img{
+            width: 100%; /* reduz a imagem de acordo com o dispositivo*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus expedita ipsum nesciunt architecto? Est cum, dignissimos ut et sint fugit aperiam tempora officiis vitae beatae deserunt quod mollitia corrupti.</p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint, vero facere earum consectetur ullam excepturi sit, cumque tempore ratione id quia perferendis. Sapiente quis exercitationem libero ducimus, facilis quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores placeat, quia officiis consequatur quaerat animi quae ea autem rerum dolores ut perferendis veniam at laboriosam, aliquam officia libero non expedita.
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg"> <!-- ira carregar a irina menor, com largura mais curta do que a original irina quando chegar a 600px ou menos de tela, assim não terá barra de rolagem.-->
+            <img src="imagens/irina-blok.jpg" alt="Irina">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus expedita ipsum nesciunt architecto? Est cum, dignissimos ut et sint fugit aperiam tempora officiis vitae beatae deserunt quod mollitia corrupti.</p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint, vero facere earum consectetur ullam excepturi sit, cumque tempore ratione id quia perferendis. Sapiente quis exercitationem libero ducimus, facilis quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores placeat, quia officiis consequatur quaerat animi quae ea autem rerum dolores ut perferendis veniam at laboriosam, aliquam officia libero non expedita.
+    </main>
+</body>
+</html>

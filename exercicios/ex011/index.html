@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"> <!-- celular-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!-- tablet -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+        <!-- a ordem da tag source no código será de acordo com os px, do menor para o maior. -->
+
+        <!-- a imagem foto-g será carregada, como mostra a tag img src, mas, se o navegador for menor do que 1050px, vai ser carregada a imagem foto-m, como indica a tag source e seus atributos media, srcset e midia. -->
+
+        <!-- Faça o teste aumentando e diminuindo o navegador, assim o pixel será mudado e o tamanho da imagem também.-->
+
+        <!-- use o  max-width com o adicional de 50px para não ter barra de rolagem-->
+
+        <!-- Para tela grandes vai carregar a foto-g, media = foto-m e pequenas = foto-p -->
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <!--<audio src="midia/Daniel Caesar - Get You ft. Kali Uchis [Official Video].mp3" controls autoplay loop></audio>
+         essa forma só pode para mp3, mais limitada. -->
+
+         <audio preload="none" controls autoplay loop>
+            <source src="midia/Daniel Caesar - Get You ft. Kali Uchis [Official Video].mp3" type="audio/mp3">
+            <source src="midia/Daniel Caesar - Get You ft. Kali Uchis [Official Video].ogg" type="audio/ogg">
+            <source src="midia/Daniel Caesar - Get You ft. Kali Uchis [Official Video].mp3" type="audio/wav">
+            <!--A ordem é importante, ele tentará carregar os áudios de cima para baixo, até um funcionar. OBS: o wav não é um bom formato, por ser muito pesado para o site. -->
+            <!-- o preload metadata carrega infos, como a duração da música no play. none só carrega essas infos quando o usuário apertar o play. -->
+
+            <p>Seu navegador não suporta áudio.
+                <a href="midia/Daniel Caesar - Get You ft. Kali Uchis [Official Video].mp3" download="Daniel Caesar - Get You ft. Kali Uchis [Official Video].mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3.</a>
+            </p>
+            <!-- o site devolverá essas linhas para o cliente caso o navegador não tiver nenhuma compatibilidade com os formatos ditos. -->
+            
+
+         </audio>
+
+        
+        
+    
+</body>
+</html>
+

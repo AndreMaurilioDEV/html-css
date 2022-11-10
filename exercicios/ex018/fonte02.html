@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+
+    <!-- Usando fontes externas baixadas de um site (dafont.com) usa-se o seletor @font-face  -->
+    <style>
+        @font-face {
+            font-family:'Love'; /* Nomes escolhido por você mesmo no font-family*/
+            src: url('fontes/love larry ttf.ttf') format('truetype'), url('fontes/love larry otf.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*Essas fontes são baixas em otf ou ttf, dependendo do navegador se vai aceitar ou não, é melhor ter os dois formatos.*/
+
+            /*O format pode ser -opentype(otf), -truetype(ttf), -embedded-opentype, truetype-aat ou -svg. */
+        }
+        h1{
+            font-family: 'Love', serif;
+            /* Nome dado da família, caso ocorra algum problema irá carregar uma fonte serif aleatória. */
+            text-align: center;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora perferendis ipsum dolore quo atque assumenda nihil perspiciatis impedit non voluptatibus sapiente quasi facilis eligendi iste, sed quod natus numquam, eaque id aut earum eius soluta laboriosam! Iusto esse aut et ducimus fuga? Aperiam perspiciatis quo iure rerum! Corrupti adipisci vero, harum laudantium quisquam provident quos laboriosam laborum quas architecto itaque, nulla a, natus illum commodi voluptatem minus. Sapiente, iusto officiis vitae facere minus perspiciatis delectus dolorum natus ab eligendi accusamus eaque consequuntur molestias recusandae ipsa, harum optio culpa temporibus, reiciendis alias explicabo a possimus hic. Fugit doloremque voluptates itaque voluptas.</p>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações / Pré-formatação </h1>
+    <h2>Código-Fonte</h2>
+    <p>O comando <code>documento.getElementById('teste')</code> é escrito em línguagem JavaSCript. </p>
+    <!-- a tag code indica que se trata de um código de computador, porque as letras ficam no modo mono-espaçadas, que é melhor para leitura.-->
+    
+<pre>
+<code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0;
+    print(f'O número {num} é PAR')
+    else:
+    printf(f'O número {num} é ÍMPAR')
+    printf('Fim do programa')
+</code>
+</pre>
+    
+    <!-- a tag pre code mantém o texto formatado da maneira que foi digitado, sem precisar criar paragráfos.-->
+    <!-- shift + tab é possível movimentar o que você escreveu para a esquerda. Com tab ele, movimenta pra direita, acrescentando um espaço do lado, tabulação.-->
+
+
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos: </p>
+    <blockquote cite="https://books.google.com/books?id=2iPYCQAAQBAJ&printsec=frontcover&dq=html&hl=pt-BR&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwjgioyNysT6AhX_FLkGHWbdB-oQ6AF6BAgEEAI">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote >
+
+    <!-- com a tag q, o texto selecionado automaticamente recebe aspas.-->
+    
+    <!-- a tag blockquote faz uma citação mais longa, criando um espaço horizontalmente pra si. A tag blockquote com cite dentro, ajuda com o mecanismo de busca com a frase, sabendo que essa citação em frase faz referência ao livro citado, ou seja, manter os direitos de quem produz. Usado também para página do autor,vendas etc. -->
+
+    <h2> Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperTexte Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <!-- envelopa o termo abreviado com a tag abbr, e coloca o significado nas aspas do title que irá mostrar no site, ao passar o mouse em cima.-->
+
+    
+</body>
+</html>

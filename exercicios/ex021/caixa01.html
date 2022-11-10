@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkslategray;
+            padding: 10px;
+            margin: 20px auto 40px auto; 
+            outline: 10px dashed #93b2b8;
+
+            /* display: inline; Mudar h1 de box level para inline level(h1 é por padrão box-level. */
+            
+            
+
+
+            /* O sentido correto do padding é essa, cima-direita-baixo-esquerda */ 
+
+          
+        }
+
+        a{
+            
+            border: 10px solid red;
+            padding: 10px;
+
+
+            /* display: block; Mudar de inline-level para box-level. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragráfos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level.</a> Vamos ver como tudo isso funciona</p>
+
+    <!-- As tags <h1> e <p> todo é uma caixa box-level como vimos no devtools do navegador, apertando f12, mas a tag <a> é uma inline-level(dentro da linha) e não quebra a linha como já visto. -->
+        <!-- É muito importantes usar o devtools para testar cada medidas de cada caixa no site, mas as mudanças no devtools não afeta o código-fonte no VS. -->
+
+    
+</body>
+</html>
