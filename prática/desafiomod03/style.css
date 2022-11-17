@@ -31,6 +31,10 @@ main{
     width: 100%;
 }
 
+body{
+    min-height: 100vh;
+}
+
 
 
 
@@ -78,6 +82,13 @@ main{
     padding: 20px 0px 20px 10px;
 }
 
+
+@media (max-width: 800px){
+    .containertexto{
+        width: 360px;
+        padding-right: 0;
+    }
+}
 
 
     
